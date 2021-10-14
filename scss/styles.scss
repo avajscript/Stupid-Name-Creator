@@ -1,0 +1,99 @@
+$light-blue: #a8dadc;
+$deep-blue: #457b9d;
+$dark-blue: #1d3557;
+$red: #e63946;
+$white: #f1faee;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: "ZCOOL KuaiLe";
+}
+h1 {
+  color: #e63946;
+}
+
+main {
+  background-color: #a8dadc;
+  height: 100vh;
+}
+input {
+  height: 30px;
+  margin-bottom: 1rem;
+}
+button {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: $white;
+  box-shadow: 0px 10px 0px 0px rgba(1, 1, 1, 1.5);
+}
+.icon-popup {
+  position: relative;
+  background-color: $white;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  border: 1px solid $dark-blue;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0px 10px 0px 0px rgba(1, 1, 1, 1.5);
+  h2 {
+    color: #1d3557;
+  }
+  &:hover {
+    background-color: $deep-blue;
+  }
+  &:active {
+    top: 10px;
+    box-shadow: none;
+  }
+}
+
+.content-box {
+  background-color: $white;
+  box-shadow: 0px 10px 0px 0px rgba(1, 1, 1, 1.5);
+}
+.input-container {
+  border: 1px solid black;
+  padding: 20px;
+  top: 20px;
+  width: 400px;
+  position: absolute;
+  left: -400px;
+  transition: all 2s;
+  text-align: center;
+  h2 {
+    text-align: center;
+  }
+  label {
+    font-weight: bold;
+  }
+}
+
+.show-input {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-container {
+  position: relative;
+  height: 350px;
+}
+button {
+  border-radius: 0;
+  border-style: outset;
+  cursor: pointer;
+  padding: 10px;
+  &:active {
+    border-style: inset;
+  }
+}
